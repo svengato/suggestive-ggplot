@@ -8,7 +8,7 @@ geom_suggestive <- function(violin.color = "indianred", box.color = "black", med
   list(
     geom_violin(trim = FALSE, fill = violin.color, col = violin.color),
     geom_boxplot(width = 0.05, fill = box.color, col = box.color),
-    stat_summary(fun.y = median, geom = "point", col = median.color)
+    stat_summary(fun = median, geom = "point", col = median.color)
   )
 }
 
